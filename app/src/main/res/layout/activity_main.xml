@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".MainActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/botondatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="botonIngo"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/botondatoss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="botonvistaCuadricula"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        tools:ignore="ButtonStyle" />
+
+</LinearLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/RecyclerXML"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>
